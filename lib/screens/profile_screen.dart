@@ -39,8 +39,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         backgroundColor: Theme.of(context).colorScheme.background,
-        title: const Text('P R O F I L E') ,
+        title: Text('P R O F I L E') ,
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -70,9 +71,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
                 child: TextField(
                   controller: _usernameController,
-                    decoration: const InputDecoration(
-                  focusColor: Colors.black,
+                    decoration: InputDecoration(
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Theme.of(context).colorScheme.inversePrimary)
+                      ),
+                  focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Theme.of(context).colorScheme.inversePrimary)
+                  ),
                  hintText: 'new username',
+                   hintStyle: TextStyle(color: Theme.of(context).colorScheme.inversePrimary)
                   // prefixText: 'username',
                 )),
               ),
@@ -83,14 +90,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   onTap: updateUsername,
                   child: Container(
                     height: 50,
-                    decoration: const BoxDecoration(
+                    decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
-                        color: Color.fromRGBO(168, 167, 167, 1.0)
+                        color: Theme.of(context).colorScheme.secondary,
                     ),
-                    child: const Center(
+                    child: Center(
                       child: Text('upload' ,
                         style: TextStyle(
-                            color: Colors.black
+                            color: Theme.of(context).colorScheme.inversePrimary
                         ),), ),
                   ),
                 ),

@@ -20,10 +20,13 @@ class TextFields extends StatelessWidget{
     return TextFormField(
       obscureText: obstxt,
       controller: controllers,
+
       style: TextStyle(color: Theme.of(context).colorScheme.inversePrimary),
       decoration: InputDecoration(
-          fillColor: Theme.of(context).colorScheme.inversePrimary,
-          border: const OutlineInputBorder(
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Theme.of(context).colorScheme.inversePrimary)
+        ),
+          border:  const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(5)),
           ),
           focusedBorder:OutlineInputBorder(

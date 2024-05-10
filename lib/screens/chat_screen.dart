@@ -123,6 +123,10 @@ class _ChatPageState extends State<ChatPage> {
                       color: Theme.of(context).colorScheme.inversePrimary),
                   controller: _messageController,
                   decoration: InputDecoration(
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: const BorderRadius.all(Radius.circular(15)),
+                      borderSide: BorderSide(color: Theme.of(context).colorScheme.inversePrimary),
+                    ),
                     border: OutlineInputBorder(
                       borderSide: BorderSide(
                           color: Theme.of(context).colorScheme.inversePrimary),

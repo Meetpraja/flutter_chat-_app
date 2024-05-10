@@ -91,7 +91,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         obstxt: false,
                         controllers: _userNamecontroller,
                         text: 'username',
-                        icon: const Icon(Icons.email),
+                        icon: Icon(Icons.supervised_user_circle_rounded,color: Theme.of(context).colorScheme.inversePrimary),
                         errortext: 'usernamerequired',
                       ),
                       const SizedBox(
@@ -101,7 +101,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         obstxt: false,
                         controllers: _emailcontroller,
                         text: 'e-mail',
-                        icon: const Icon(Icons.email),
+                        icon: Icon(Icons.email,color: Theme.of(context).colorScheme.inversePrimary),
                         errortext: 'emailrequired',
                       ),
                       const SizedBox(
@@ -111,7 +111,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         obstxt: true,
                         controllers: _passwordcontroller,
                         text: 'password',
-                        icon: const Icon(Icons.password),
+                        icon: Icon(Icons.password,color: Theme.of(context).colorScheme.inversePrimary),
                         errortext: 'password required',
                       ),
                       const SizedBox(
@@ -121,7 +121,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         obstxt: true,
                         controllers: _confirmpasscontroller,
                         text: 'confirm password',
-                        icon: const Icon(Icons.password),
+                        icon: Icon(Icons.password,color: Theme.of(context).colorScheme.inversePrimary),
                         errortext: 'please confirm password',
                       ),
                     ],
