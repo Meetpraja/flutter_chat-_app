@@ -72,7 +72,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   controller: _usernameController,
                     decoration: const InputDecoration(
                   focusColor: Colors.black,
-                 hintText: 'username',
+                 hintText: 'new username',
                   // prefixText: 'username',
                 )),
               ),
