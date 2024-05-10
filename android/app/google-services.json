@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "266180302237",
+    "project_id": "chatapp-dedcc",
+    "storage_bucket": "chatapp-dedcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266180302237:android:b74af9e5d85c695e620b74",
+        "android_client_info": {
+          "package_name": "com.example.social_media"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClQcXNvqIElwAw1krHZ7knp5jR5VpB-Qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
