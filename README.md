@@ -17,8 +17,8 @@ samples, guidance on mobile development, and a full API reference.
 
 <h2>application snapshots</h2>
 
-<img src="github_SS/1.png" width="350" >
-<img src="github_SS/2.png" width="350" >
+<img src="github_SS/1.png" width="150" >
+<img src="github_SS/2.png" width="150" >
 <img src="github_SS/3.png" width="350" >
 <img src="github_SS/4.png" width="350" >
 <img src="github_SS/5.png" width="350" >
